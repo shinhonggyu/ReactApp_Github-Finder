@@ -6,6 +6,7 @@ import {
   CLEAR_USERS,
 } from '../type';
 
+// eslint-disable-next-line
 export default (state, action) => {
   switch (action.type) {
     case SEARCH_USERS:

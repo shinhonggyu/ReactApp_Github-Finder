@@ -5,7 +5,7 @@ import Repos from '../repos/Repos';
 import GithubContext from '../../context/github/githubContext';
 import { useRouteMatch } from 'react-router-dom';
 
-const User = ({}) => {
+const User = () => {
   const githubContext = useContext(GithubContext);
 
   const { getUser, loading, user, repos, getUserRepos } = githubContext;
@@ -31,7 +31,6 @@ const User = ({}) => {
     following,
     public_repos,
     public_gists,
-    hireable,
   } = user;
 
   if (loading) return <Spinner />;
